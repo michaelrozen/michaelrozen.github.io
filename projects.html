@@ -1,0 +1,154 @@
+<!-- 
+
+Copyright ImagineAny. All Right Reserved.
+
+imagineany.com
+
+Dan Crisan
+Hassan Akeel
+Salman Hashmi
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+      <meta charset="utf-8">
+      <title>Michael Rozen</title>
+      
+       <link href='https://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+      
+      
+      <link rel="stylesheet" href="assets/font-awesome-4.4.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="assets/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.css">
+      
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2"></script>
+        <script type="text/javascript">
+        //$(function(){
+        
+          var currentIndex = 0,
+          items = $('.container div'),
+          itemAmt = items.length;
+
+        function cycleItems() {
+          var item = $('.container div').eq(currentIndex);
+          items.hide();
+          item.css('display','inline-block');
+        }
+
+
+        var autoSlide = setInterval(function() {
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        }, 30000);
+
+
+        $('.next').click(function() {
+          clearInterval(autoSlide);
+          currentIndex += 1;
+          if (currentIndex > itemAmt - 1) {
+            currentIndex = 0;
+          }
+          cycleItems();
+        });
+
+        $('.prev').click(function() {
+          clearInterval(autoSlide);
+          currentIndex -= 1;
+          if (currentIndex < 0) {
+            currentIndex = itemAmt - 1;
+          }
+          cycleItems();
+        });
+        //});
+        </script>
+     
+        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  </head>
+
+  <body class="projects container">
+
+    <!-- Header -->
+
+    <div style="position:relative;">
+    <header class="primary-header  group">
+
+      <h1 class="logo">
+        <a href="index.html">Michael Rozen</a>
+      </h1>
+
+      <!--<h3 class="tagline">Artist, Designer</h3>-->
+
+      <nav class="nav primary-nav">
+        <div class="col-md-1"></div>
+        <div class="col-md-2"><a class="home" href="index.html">Home</a></div>
+        <div class="col-md-2"><a class="artwork" href="artwork.html">Artwork</a></div>
+        <div class="col-md-2"><a class="projects" href="projects.html">Projects</a></div>
+        <div class="col-md-2"><a class="about" href="about.html">About</a></div>
+        <div class="col-md-2"><a class="contact" href="contact.html">Contact</a></div>
+        <div class="col-md-1"></div>
+      </nav>
+
+    </header>
+    </div>
+
+    <div style="position:relative;"> 
+    <section style="margin-top:40px;"class=" projectSection">
+      <div style="margin: 20px 0;"class="col-md-4">
+        <a href=foundations.html>
+          <div><img src="assets/images/projects/foundations/RBS_artwall_mock2_web-700x466.jpg" alt="" height="" width=""></div>
+          <div>"Foundations" -  with HCMA Architecture + Design</div>
+          </div>
+        </a>
+       <a href=connections.html>
+          <div style="margin: 20px 0;"  class="col-md-4">
+          <div><img src="assets/images/projects/DSCNTitle.JPG" alt="" height="" width=""></div>
+          <div>"Connections" - with HCMA Architecture + Design</div>
+        </a>
+      </div>
+       <a href=hungry-dog.html>
+         <div style="margin: 20px 0;" class="col-md-4">
+          <div><img src="assets/images/projects/DSCN0220.JPG" alt="" height="" width=""></div>
+          <div>"Hungry Dog Cafe"</div>
+        </a>
+      </div>
+    </section>         
+	  </div>           
+	             
+    <!-- Footer -->
+
+    
+    <div>
+    <footer class="primary-footer  container project-footer group">
+
+      <small>
+          Copyright &copy; 2015 Michael Rozen. All Rights Reserved.
+        </small>
+
+      <nav class="foot">
+        <ul>        
+              <li>
+                <a href="https://instagram.com/m.rozen/" target="_blank" class="fa fa-instagram"><span class="label"></span></a>
+            </li>
+            
+            <li>
+                <a href="mailto:m.rozen.art@gmail.com" target="_blank" class="fa fa-envelope"><span class="label"></span></a>
+            </li>
+            
+             <li>Contact</li>
+        </ul>
+      </nav>
+
+    </footer>
+    
+    </div>
+      
+     <!-- <script src="assets/dist/js/lightbox-plus-jquery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"</script>-->
+  </body>
+</html>
