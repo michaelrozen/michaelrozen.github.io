@@ -1,9 +1,9 @@
 # michael-rozen-website
 Michael Rozen's Website.
 
-Copyright © 2015 Michael Rozen. All Rights Reserved.
+Copyright ï¿½ 2016 Michael Rozen. All Rights Reserved.
 
-Website crafted by © ImagineAny.
+Website crafted by ï¿½ ImagineAny.
 
 imagineany.com
 
