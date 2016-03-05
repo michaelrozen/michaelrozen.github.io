@@ -1,4 +1,5 @@
 /* 
+/* 
 
 Copyright ImagineAny. All Right Reserved.
 
@@ -90,7 +91,7 @@ body.home a.home, body.artwork a.artwork, body.projects a.projects, body.about a
     border-color: black;
 }
 
-li.foundations a.foundations, li.connections a.connections, li.hungry-dog a.hungry-dog {
+li.foundations a.foundations, li.connections a.connections, li.dog a.dog, li.hungry-dog a.hungry-dog {
     border-bottom: 1.5px solid #1e1f23;
     border-color: black;
 }
